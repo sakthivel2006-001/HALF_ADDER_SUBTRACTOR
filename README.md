@@ -51,16 +51,27 @@ Figure -02 HALF Subtractor
 **Program:**
 
 module HALF_ADDSUB(a,b,sum,carry,D,Bo);
+
 input a,b;
+
 output sum,carry,D,Bo;
+
 //HALF ADDER
+
 xor(sum,a,b);
+
 and(carry,a,b);
+
 //HALF SUBTRACTOR
+
 wire abar;
+
 not(abar,a);
+
 xor(D,a,b);
+
 and(Bo,abar,b);
+
 endmodule
 
 ## Developed by:S.SAKTHIVEL
@@ -79,4 +90,6 @@ endmodule
 
 
 **Result:**
+
+
 Thus Implementation-of-Half-Adder-and-Half Subtractor-circuit is running successfully
